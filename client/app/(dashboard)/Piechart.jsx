@@ -43,7 +43,7 @@ const Piechart = () => {
   const fetchCategoryStats = async () => {
     try {
       const res = await axios.get(
-        "https://carbon-footprint-tracker-4dxj.onrender.com /activity/category-stats",
+        "https://carbon-footprint-tracker-4dxj.onrender.com/activity/category-stats",
         getAuthHeaders()
       );
       setPieData(res.data.categoryStats);

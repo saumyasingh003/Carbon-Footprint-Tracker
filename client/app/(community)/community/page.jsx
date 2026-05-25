@@ -77,7 +77,7 @@ const Community = () => {
 
       try {
         await axios.put(
-          "https://carbon-footprint-tracker-4dxj.onrender.com /notification/mark-read-type/community",
+          "https://carbon-footprint-tracker-4dxj.onrender.com/notification/mark-read-type/community",
           {},
           {
             headers: {
@@ -104,7 +104,7 @@ const Community = () => {
 
       try {
         const res = await axios.get(
-          "https://carbon-footprint-tracker-4dxj.onrender.com /message/all?room=global",
+          "https://carbon-footprint-tracker-4dxj.onrender.com/message/all?room=global",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -216,7 +216,7 @@ const Community = () => {
 
     try {
       await axios.post(
-        "https://carbon-footprint-tracker-4dxj.onrender.com /message/upload",
+        "https://carbon-footprint-tracker-4dxj.onrender.com/message/upload",
         formData,
         {
           headers: {
@@ -405,8 +405,8 @@ const Community = () => {
                 <div
                   key={msg._id}
                   className={`flex items-end gap-2 sm:gap-3 ${isMine
-                      ? "justify-end ml-auto"
-                      : "justify-start"
+                    ? "justify-end ml-auto"
+                    : "justify-start"
                     } max-w-[95%] sm:max-w-[80%] md:max-w-[75%] group relative`}
                 >
                   {!isMine && (
@@ -417,8 +417,8 @@ const Community = () => {
 
                   <div
                     className={`flex flex-col gap-1 max-w-full relative ${isMine
-                        ? "items-end"
-                        : "items-start"
+                      ? "items-end"
+                      : "items-start"
                       }`}
                   >
                     {/* Reaction Menu */}
@@ -460,8 +460,8 @@ const Community = () => {
                     {/* Actions */}
                     <div
                       className={`absolute ${isMine
-                          ? "right-0 -top-10 sm:right-full sm:mr-3 sm:top-1/2 sm:-translate-y-1/2"
-                          : "left-0 -top-10 sm:left-full sm:ml-3 sm:top-1/2 sm:-translate-y-1/2"
+                        ? "right-0 -top-10 sm:right-full sm:mr-3 sm:top-1/2 sm:-translate-y-1/2"
+                        : "left-0 -top-10 sm:left-full sm:ml-3 sm:top-1/2 sm:-translate-y-1/2"
                         } opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-200 z-20 flex items-center bg-white border border-[#95A472]/15 shadow-md rounded-full p-1 gap-1`}
                     >
                       <button
@@ -501,8 +501,8 @@ const Community = () => {
                     {/* Bubble */}
                     <div
                       className={`px-4 py-3 max-w-full shadow-sm transition-all duration-200 ${isMine
-                          ? "rounded-2xl rounded-br-none bg-gradient-to-br from-[#41521F] to-[#2e3b15] text-white hover:shadow-md hover:shadow-[#41521F]/15"
-                          : "rounded-2xl rounded-bl-none bg-[#f5f7f2] border border-[#95A472]/20 text-[#1e2a03] hover:shadow-md"
+                        ? "rounded-2xl rounded-br-none bg-gradient-to-br from-[#41521F] to-[#2e3b15] text-white hover:shadow-md hover:shadow-[#41521F]/15"
+                        : "rounded-2xl rounded-bl-none bg-[#f5f7f2] border border-[#95A472]/20 text-[#1e2a03] hover:shadow-md"
                         }`}
                     >
                       {/* TEXT */}
@@ -570,8 +570,8 @@ const Community = () => {
                           href={`https://carbon-footprint-tracker-4dxj.onrender.com ${msg.fileUrl}`}
                           target="_blank"
                           className={`flex items-center gap-3 p-3 rounded-2xl border ${isMine
-                              ? "bg-white/10 border-white/10"
-                              : "bg-white border-[#95A472]/15"
+                            ? "bg-white/10 border-white/10"
+                            : "bg-white border-[#95A472]/15"
                             }`}
                         >
                           <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[#eef6e8]">

@@ -32,7 +32,7 @@ const Tracker = () => {
     const fetchStats = async () => {
         try {
             const res = await axios.get(
-                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/stats",
+                "https://carbon-footprint-tracker-4dxj.onrender.com/activity/stats",
                 getAuthHeaders()
             );
             setStats(res.data.stats);
@@ -45,7 +45,7 @@ const Tracker = () => {
     const fetchActivities = async () => {
         try {
             const res = await axios.get(
-                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/my-activities",
+                "https://carbon-footprint-tracker-4dxj.onrender.com/activity/my-activities",
                 getAuthHeaders()
             );
             setActivities(res.data.activities);
@@ -63,7 +63,7 @@ const Tracker = () => {
     const deleteActivity = async (id) => {
         try {
             await axios.delete(
-                `https://carbon-footprint-tracker-4dxj.onrender.com /activity/delete/${id}`,
+                `https://carbon-footprint-tracker-4dxj.onrender.com/activity/delete/${id}`,
                 getAuthHeaders()
             );
 

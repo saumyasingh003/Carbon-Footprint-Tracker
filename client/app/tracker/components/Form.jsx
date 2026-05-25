@@ -215,7 +215,7 @@ const Form = ({ onActivityAdded }) => {
 
     try {
       await axios.post(
-        "https://carbon-footprint-tracker-4dxj.onrender.com /activity/add",
+        "https://carbon-footprint-tracker-4dxj.onrender.com/activity/add",
         formData,
         getAuthHeaders()
       );

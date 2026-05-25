@@ -33,7 +33,7 @@ const Dashboard = () => {
     const fetchStats = async () => {
         try {
             const res = await axios.get(
-                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/stats",
+                "https://carbon-footprint-tracker-4dxj.onrender.com/activity/stats",
                 getAuthHeaders()
             );
             setStats(res.data.stats);
@@ -46,7 +46,7 @@ const Dashboard = () => {
     const fetchCategoryStats = async () => {
         try {
             const res = await axios.get(
-                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/category-stats",
+                "https://carbon-footprint-tracker-4dxj.onrender.com/activity/category-stats",
                 getAuthHeaders()
             );
             setCategoryStats(res.data.categoryStats || []);
@@ -59,7 +59,7 @@ const Dashboard = () => {
     const fetchWeeklyStats = async () => {
         try {
             const res = await axios.get(
-                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/weekly-stats",
+                "https://carbon-footprint-tracker-4dxj.onrender.com/activity/weekly-stats",
                 getAuthHeaders()
             );
             setWeeklyStats(res.data.weeklyStats || []);
@@ -572,10 +572,10 @@ const Dashboard = () => {
                     <div className="text-center last:border-0">
                         <p className="text-[9px] text-gray-400 font-bold uppercase tracking-wider">{t("environmentalRating")}</p>
                         <h2 className={`text-xl font-black mt-1 ${stats.ecoScore === "Bad ⚠️"
-                                ? "text-red-600"
-                                : stats.ecoScore === "Better 🍃"
-                                    ? "text-yellow-600"
-                                    : "text-green-600"
+                            ? "text-red-600"
+                            : stats.ecoScore === "Better 🍃"
+                                ? "text-yellow-600"
+                                : "text-green-600"
                             }`}>
                             {stats.ecoScore || "N/A"}
                         </h2>

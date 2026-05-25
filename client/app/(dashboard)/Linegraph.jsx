@@ -24,7 +24,7 @@ const Linegraph = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://carbon-footprint-tracker-4dxj.onrender.com /activity/weekly-stats",
+        "https://carbon-footprint-tracker-4dxj.onrender.com/activity/weekly-stats",
         {
           headers: {
             Authorization: `Bearer ${token}`,

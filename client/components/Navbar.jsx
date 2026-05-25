@@ -37,7 +37,7 @@ const Navbar = () => {
       const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) return;
 
-      const res = await axios.get("https://carbon-footprint-tracker-4dxj.onrender.com /notification/unread-count", {
+      const res = await axios.get("https://carbon-footprint-tracker-4dxj.onrender.com/notification/unread-count", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

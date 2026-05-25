@@ -37,7 +37,7 @@ const NotificationsPage = () => {
     try {
       setLoading(true);
       const res = await axios.get(
-        "https://carbon-footprint-tracker-4dxj.onrender.com /notification/all",
+        "https://carbon-footprint-tracker-4dxj.onrender.com/notification/all",
         getAuthHeaders()
       );
       setNotifications(res.data.notifications);
@@ -47,7 +47,7 @@ const NotificationsPage = () => {
       if (hasUnread) {
         // Mark all as read in the backend to clear the count
         await axios.put(
-          "https://carbon-footprint-tracker-4dxj.onrender.com /notification/mark-all-read",
+          "https://carbon-footprint-tracker-4dxj.onrender.com/notification/mark-all-read",
           {},
           getAuthHeaders()
         );
@@ -70,7 +70,7 @@ const NotificationsPage = () => {
   const handleMarkAsRead = async (id) => {
     try {
       await axios.put(
-        `https://carbon-footprint-tracker-4dxj.onrender.com /notification/read/${id}`,
+        `https://carbon-footprint-tracker-4dxj.onrender.com/notification/read/${id}`,
         {},
         getAuthHeaders()
       );
@@ -98,7 +98,7 @@ const NotificationsPage = () => {
       );
       try {
         await axios.put(
-          `https://carbon-footprint-tracker-4dxj.onrender.com /notification/read/${item._id}`,
+          `https://carbon-footprint-tracker-4dxj.onrender.com/notification/read/${item._id}`,
           {},
           getAuthHeaders()
         );
@@ -195,8 +195,8 @@ const NotificationsPage = () => {
                     key={item._id}
                     onClick={() => handleNotificationClick(item)}
                     className={`group bg-white rounded-xl p-4 shadow-sm border ${item.isRead
-                        ? "border-gray-100 opacity-75"
-                        : "border-[#95A472]/30"
+                      ? "border-gray-100 opacity-75"
+                      : "border-[#95A472]/30"
                       } hover:shadow-md cursor-pointer transition-all duration-300 flex items-start gap-3.5 relative`}
                   >
                     {/* Unread Indicator */}
@@ -216,8 +216,8 @@ const NotificationsPage = () => {
                       <div className="flex items-center justify-between gap-2">
                         <h2
                           className={`text-sm font-bold capitalize ${item.isRead
-                              ? "text-gray-600"
-                              : "text-[#1e2a03]"
+                            ? "text-gray-600"
+                            : "text-[#1e2a03]"
                             }`}
                         >
                           {item.title}
@@ -230,8 +230,8 @@ const NotificationsPage = () => {
 
                       <p
                         className={`text-xs mt-1 leading-relaxed ${item.isRead
-                            ? "text-gray-400"
-                            : "text-gray-600"
+                          ? "text-gray-400"
+                          : "text-gray-600"
                           }`}
                       >
                         {item.message}
