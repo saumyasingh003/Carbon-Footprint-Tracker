@@ -164,7 +164,7 @@ const Form = ({ onActivityAdded }) => {
         groceries: "किराने का सामान",
       }
     };
-    
+
     const lang = language === "hi" ? "hi" : "en";
     return dictionary[lang][typeKey.toLowerCase()] || typeKey;
   };
@@ -215,7 +215,7 @@ const Form = ({ onActivityAdded }) => {
 
     try {
       await axios.post(
-        "http://localhost:5000/activity/add",
+        "https://carbon-footprint-tracker-4dxj.onrender.com /activity/add",
         formData,
         getAuthHeaders()
       );

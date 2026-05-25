@@ -32,7 +32,7 @@ const Tracker = () => {
     const fetchStats = async () => {
         try {
             const res = await axios.get(
-                "http://localhost:5000/activity/stats",
+                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/stats",
                 getAuthHeaders()
             );
             setStats(res.data.stats);
@@ -45,7 +45,7 @@ const Tracker = () => {
     const fetchActivities = async () => {
         try {
             const res = await axios.get(
-                "http://localhost:5000/activity/my-activities",
+                "https://carbon-footprint-tracker-4dxj.onrender.com /activity/my-activities",
                 getAuthHeaders()
             );
             setActivities(res.data.activities);
@@ -63,7 +63,7 @@ const Tracker = () => {
     const deleteActivity = async (id) => {
         try {
             await axios.delete(
-                `http://localhost:5000/activity/delete/${id}`,
+                `https://carbon-footprint-tracker-4dxj.onrender.com /activity/delete/${id}`,
                 getAuthHeaders()
             );
 
@@ -78,17 +78,17 @@ const Tracker = () => {
     };
 
     const getLocalizedCategoryName = (cat) => {
-      if (!cat) return "";
-      const keyMap = {
-        transport: "categoryTransport",
-        electricity: "categoryElectricity",
-        food: "categoryFood",
-        waste: "categoryRecycling",
-        water: "categoryWater",
-        shopping: "tracker", // fallback
-      };
-      const key = keyMap[cat.toLowerCase()];
-      return key ? t(key) : cat;
+        if (!cat) return "";
+        const keyMap = {
+            transport: "categoryTransport",
+            electricity: "categoryElectricity",
+            food: "categoryFood",
+            waste: "categoryRecycling",
+            water: "categoryWater",
+            shopping: "tracker", // fallback
+        };
+        const key = keyMap[cat.toLowerCase()];
+        return key ? t(key) : cat;
     };
 
     return (
@@ -160,10 +160,10 @@ const Tracker = () => {
 
                     <h1
                         className={`text-3xl font-bold mt-2 ${stats.ecoScore === "Bad ⚠️"
-                                ? "text-red-500"
-                                : stats.ecoScore === "Better 🍃"
-                                    ? "text-yellow-500"
-                                    : "text-green-600"
+                            ? "text-red-500"
+                            : stats.ecoScore === "Better 🍃"
+                                ? "text-yellow-500"
+                                : "text-green-600"
                             }`}
                     >
                         {stats.ecoScore}

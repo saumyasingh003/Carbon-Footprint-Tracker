@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { 
-  Bell, 
-  AlertTriangle, 
-  CheckCircle, 
-  Trophy, 
+import {
+  Bell,
+  AlertTriangle,
+  CheckCircle,
+  Trophy,
   ArrowLeft,
   Check,
   MessageSquare
@@ -37,7 +37,7 @@ const NotificationsPage = () => {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:5000/notification/all",
+        "https://carbon-footprint-tracker-4dxj.onrender.com /notification/all",
         getAuthHeaders()
       );
       setNotifications(res.data.notifications);
@@ -47,7 +47,7 @@ const NotificationsPage = () => {
       if (hasUnread) {
         // Mark all as read in the backend to clear the count
         await axios.put(
-          "http://localhost:5000/notification/mark-all-read",
+          "https://carbon-footprint-tracker-4dxj.onrender.com /notification/mark-all-read",
           {},
           getAuthHeaders()
         );
@@ -70,14 +70,14 @@ const NotificationsPage = () => {
   const handleMarkAsRead = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/notification/read/${id}`,
+        `https://carbon-footprint-tracker-4dxj.onrender.com /notification/read/${id}`,
         {},
         getAuthHeaders()
       );
       toast.success(t("notificationMarkedRead"));
-      
+
       // Update local state to avoid full reload
-      setNotifications(prev => 
+      setNotifications(prev =>
         prev.map(item => item._id === id ? { ...item, isRead: true } : item)
       );
 
@@ -93,12 +93,12 @@ const NotificationsPage = () => {
   const handleNotificationClick = async (item) => {
     if (!item.isRead) {
       // Optimistically update state
-      setNotifications(prev => 
+      setNotifications(prev =>
         prev.map(n => n._id === item._id ? { ...n, isRead: true } : n)
       );
       try {
         await axios.put(
-          `http://localhost:5000/notification/read/${item._id}`,
+          `https://carbon-footprint-tracker-4dxj.onrender.com /notification/read/${item._id}`,
           {},
           getAuthHeaders()
         );
@@ -194,11 +194,10 @@ const NotificationsPage = () => {
                   <div
                     key={item._id}
                     onClick={() => handleNotificationClick(item)}
-                    className={`group bg-white rounded-xl p-4 shadow-sm border ${
-                      item.isRead
+                    className={`group bg-white rounded-xl p-4 shadow-sm border ${item.isRead
                         ? "border-gray-100 opacity-75"
                         : "border-[#95A472]/30"
-                    } hover:shadow-md cursor-pointer transition-all duration-300 flex items-start gap-3.5 relative`}
+                      } hover:shadow-md cursor-pointer transition-all duration-300 flex items-start gap-3.5 relative`}
                   >
                     {/* Unread Indicator */}
                     {!item.isRead && (
@@ -216,11 +215,10 @@ const NotificationsPage = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <h2
-                          className={`text-sm font-bold capitalize ${
-                            item.isRead
+                          className={`text-sm font-bold capitalize ${item.isRead
                               ? "text-gray-600"
                               : "text-[#1e2a03]"
-                          }`}
+                            }`}
                         >
                           {item.title}
                         </h2>
@@ -231,11 +229,10 @@ const NotificationsPage = () => {
                       </div>
 
                       <p
-                        className={`text-xs mt-1 leading-relaxed ${
-                          item.isRead
+                        className={`text-xs mt-1 leading-relaxed ${item.isRead
                             ? "text-gray-400"
                             : "text-gray-600"
-                        }`}
+                          }`}
                       >
                         {item.message}
                       </p>

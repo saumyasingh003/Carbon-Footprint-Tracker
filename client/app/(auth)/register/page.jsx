@@ -35,7 +35,7 @@ const Register = () => {
       setLoading(true);
 
       const { data } = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://carbon-footprint-tracker-4dxj.onrender.com /auth/register",
         formData,
       );
 

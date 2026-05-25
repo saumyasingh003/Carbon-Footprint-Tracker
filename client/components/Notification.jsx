@@ -23,7 +23,7 @@ const Notification = () => {
           localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://localhost:5000/notification/all",
+          "https://carbon-footprint-tracker-4dxj.onrender.com /notification/all",
           {
             headers: {
               Authorization:
