@@ -4,56 +4,92 @@
 
 ![Vashudha Banner](./assets/banner.png)
 
+<<<<<<< HEAD
 Vashudha is a modern, full-stack **Carbon Footprint Tracker** designed to empower individuals and communities with real-time sustainability intelligence. Climate change feels global, but it begins with personal habits. Vashudha helps you understand the environmental cost of everyday life — and how small decisions can create meaningful change.
 
+=======
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 ---
 
 ## ✨ Features
 
 ### 🔐 Authentication System
+<<<<<<< HEAD
 - **Secure Access**: Secure login and signup system with protected JWT-based user authentication.
 - **Session Management**: Session persistence using secure HTTP-only cookies.
+=======
+Secure login and signup system with protected user access.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 🌱 Smart Carbon Footprint Calculator
+<<<<<<< HEAD
 - **Activity Logging**: Log daily activities across multiple categories including transport, diet, energy usage, and waste.
 - **Precise Calculations**: Dynamic emission calculators powered by verified carbon factors.
+=======
+Track your daily environmental impact through intelligent carbon calculations.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 🤖 AI Suggestions
+<<<<<<< HEAD
 - **Smart Recommendations**: Get tailored, actionable suggestions powered by the Gemini AI API.
 - **Habit Building**: Adaptive recommendations based on your historical carbon logging history.
+=======
+Get smart AI-powered recommendations to reduce your carbon footprint and build sustainable habits.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 📊 Smart Dashboard
+<<<<<<< HEAD
 - **Carbon Analytics**: Interactive charts showing category-wise carbon expenditure.
 - **Environmental Score**: Real-time evaluation of your sustainability metrics with dynamic grade feedback.
 - **Progress Tracking**: Compare weekly and monthly emissions to keep track of your reduction goals.
+=======
+Interactive dashboard showing:
+- Carbon analytics
+- Environmental score
+- Progress tracking
+- Sustainability insights
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 🔔 Notification System
+<<<<<<< HEAD
 - **Sustainability Alerts**: Live updates, alerts, and eco-friendly reminders via real-time WebSocket connections.
 - **System Updates**: Keep up-to-date with carbon goals and community achievements.
+=======
+Receive important sustainability alerts, reminders, and environmental updates.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 👥 Community Chat Section
+<<<<<<< HEAD
 - **Real-Time Forum**: Connect with eco-conscious peers, exchange sustainable ideas, and discuss green topics in a live room.
 - **Instant Messaging**: Seamless chat experience powered by Socket.io.
+=======
+Connect with people, share eco-friendly ideas, and discuss sustainability topics.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 🌐 Multilingual Support
+<<<<<<< HEAD
 - **Bilingual Interface**: Accessible UI with full English and Hindi language support.
 - **Dynamic Localization**: Instantly toggle preferences across pages.
+=======
+Accessible experience with bilingual/multilingual support.
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
 
 ---
 
 ### 🏙️ Metropolitan Environmental Data
+<<<<<<< HEAD
 Real-time environmental and carbon-related insights from major metropolitan cities. Vashudha aggregates live telemetry for key air-quality parameters (PM2.5, PM10, CO) and maps them alongside regional per-capita emission drivers.
 
 #### 📊 Live City Telemetry & Emissions Diagnostics
@@ -138,3 +174,14 @@ Here is the environmental and carbon data for India's major metropolitan hubs, a
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000) to view the application.
+=======
+Real-time environmental and carbon-related insights from major metropolitan cities.
+
+---
+
+## 💚 Vision
+
+Vashudha aims to encourage people to adopt small sustainable habits that collectively create a greener and healthier planet.
+
+```
+>>>>>>> 6497aa420ccecbb334ff3217cc2df3ec41851150
