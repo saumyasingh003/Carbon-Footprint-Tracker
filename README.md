@@ -1,4 +1,4 @@
-# 🌍 Vashudha
+# Vashudha
 
 ### Smart Habits. Greener Planet.
 
@@ -6,25 +6,25 @@
 
 ---
 
-# ✨ Features
+# Features
 
-## 1. 🔐 Authentication System
+## 1. Authentication System
 Secure login and signup system with protected user access.
 
 ---
 
-## 2. 🌱 Smart Carbon Footprint Calculator
-Track your daily environmental impact through intelligent carbon calculations.
+## 2. Smart Carbon Footprint Calculator
+Track daily environmental impact through intelligent carbon footprint calculations.
 
 ---
 
-## 3. 🤖 AI Suggestions
-Get smart AI-powered recommendations to reduce your carbon footprint and build sustainable habits.
+## 3. AI-Based Suggestions
+Receive personalized recommendations to reduce carbon emissions and adopt sustainable habits.
 
 ---
 
-## 4. 📊 Smart Dashboard
-Interactive dashboard showing:
+## 4. Smart Dashboard
+Interactive dashboard featuring:
 - Carbon analytics
 - Environmental score
 - Progress tracking
@@ -32,26 +32,25 @@ Interactive dashboard showing:
 
 ---
 
-## 5. 🔔 Notification System
-Receive important sustainability alerts, reminders, and environmental updates.
+## 5. Notification System
+Get important sustainability reminders, alerts, and environmental updates.
 
 ---
 
-## 6. 👥 Community Chat Section
-Connect with people, share eco-friendly ideas, and discuss sustainability topics.
+## 6. Community Chat Section
+Connect with users, share eco-friendly ideas, and discuss sustainability topics.
 
 ---
 
-## 7. 🌐 Multilingual Support
-Accessible experience with bilingual/multilingual support.
+## 7. Multilingual Support
+Accessible user experience with bilingual and multilingual support.
 
 ---
 
-## 8. 🏙️ Metropolitan Environmental Data
-Real-time environmental and carbon-related insights from major metropolitan cities.
+## 8. Metropolitan Environmental Data
+Access environmental and carbon-related insights from major metropolitan cities.
 
 ---
 
-# 💚 Vision
-
-Vashudha aims to encourage people to adopt small sustainable habits that collectively create a greener and healthier planet.
+# Vision
+Vashudha aims to inspire individuals to adopt sustainable habits and contribute toward a greener and healthier planet.
