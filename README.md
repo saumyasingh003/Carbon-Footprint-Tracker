@@ -6,24 +6,24 @@
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 🔐 Authentication System
+## 1. 🔐 Authentication System
 Secure login and signup system with protected user access.
 
 ---
 
-### 🌱 Smart Carbon Footprint Calculator
+## 2. 🌱 Smart Carbon Footprint Calculator
 Track your daily environmental impact through intelligent carbon calculations.
 
 ---
 
-### 🤖 AI Suggestions
+## 3. 🤖 AI Suggestions
 Get smart AI-powered recommendations to reduce your carbon footprint and build sustainable habits.
 
 ---
 
-### 📊 Smart Dashboard
+## 4. 📊 Smart Dashboard
 Interactive dashboard showing:
 - Carbon analytics
 - Environmental score
@@ -32,28 +32,26 @@ Interactive dashboard showing:
 
 ---
 
-### 🔔 Notification System
+## 5. 🔔 Notification System
 Receive important sustainability alerts, reminders, and environmental updates.
 
 ---
 
-### 👥 Community Chat Section
+## 6. 👥 Community Chat Section
 Connect with people, share eco-friendly ideas, and discuss sustainability topics.
 
 ---
 
-### 🌐 Multilingual Support
+## 7. 🌐 Multilingual Support
 Accessible experience with bilingual/multilingual support.
 
 ---
 
-### 🏙️ Metropolitan Environmental Data
+## 8. 🏙️ Metropolitan Environmental Data
 Real-time environmental and carbon-related insights from major metropolitan cities.
 
 ---
 
-## 💚 Vision
+# 💚 Vision
 
 Vashudha aims to encourage people to adopt small sustainable habits that collectively create a greener and healthier planet.
-
-```
