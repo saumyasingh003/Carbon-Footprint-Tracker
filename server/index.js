@@ -48,12 +48,12 @@ app.use("/message", messageRoutes);
 // PORT
 const PORT = process.env.PORT || 5000;
 
-// HTTP SERVER & SOCKET.IO SETUP
-const server = http.createServer(app);
-initSocket(server);
-
-// SERVER START
+// HTTP SERVER & SOCKET.IO SETUP (Bypassed on Vercel serverless)
 if (!process.env.VERCEL) {
+  const server = http.createServer(app);
+  initSocket(server);
+
+  // SERVER START
   server.listen(PORT, () => {
     console.log(`✅ Server running on port ${PORT}`);
   });
