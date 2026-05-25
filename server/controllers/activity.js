@@ -1,6 +1,6 @@
 import Activity from "../models/activity.js";
 import Notification from "../models/notification.js";
-import { emissionFactors } from "../utils/emisionfactors.js";
+import { emissionFactors } from "../utils/emisionFactors.js";
 import {
     generateNotificationMessage,
 } from "../utils/generateAIInsights.js";
