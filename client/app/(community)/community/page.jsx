@@ -130,7 +130,7 @@ const Community = () => {
 
     if (!token) return;
 
-    const newSocket = io("https://carbon-footprint-tracker-4dxj.onrender.com ");
+    const newSocket = io("https://carbon-footprint-tracker-4dxj.onrender.com");
 
     setSocket(newSocket);
 
@@ -521,7 +521,7 @@ const Community = () => {
                                 msg.fileUrl
                               )
                             }
-                            src={`https://carbon-footprint-tracker-4dxj.onrender.com ${msg.fileUrl}`}
+                            src={`https://carbon-footprint-tracker-4dxj.onrender.com${msg.fileUrl}`}
                             alt=""
                             className="max-h-52 sm:max-h-64 w-full object-cover rounded-2xl cursor-pointer min-h-[120px] bg-[#95A472]/5"
                             onLoad={() => {
@@ -543,7 +543,7 @@ const Community = () => {
                       {/* VIDEO */}
                       {msg.fileType === "video" && (
                         <video
-                          src={`https://carbon-footprint-tracker-4dxj.onrender.com ${msg.fileUrl}`}
+                          src={`https://carbon-footprint-tracker-4dxj.onrender.com${msg.fileUrl}`}
                           controls
                           className="max-h-56 sm:max-h-72 w-full object-cover rounded-2xl"
                           onLoadedData={() => {
@@ -559,7 +559,7 @@ const Community = () => {
                       {msg.fileType === "audio" && (
                         <audio
                           controls
-                          src={`https://carbon-footprint-tracker-4dxj.onrender.com ${msg.fileUrl}`}
+                          src={`https://carbon-footprint-tracker-4dxj.onrender.com${msg.fileUrl}`}
                           className="w-full"
                         />
                       )}
@@ -567,7 +567,7 @@ const Community = () => {
                       {/* DOC */}
                       {msg.fileType === "docx" && (
                         <a
-                          href={`https://carbon-footprint-tracker-4dxj.onrender.com ${msg.fileUrl}`}
+                          href={`https://carbon-footprint-tracker-4dxj.onrender.com${msg.fileUrl}`}
                           target="_blank"
                           className={`flex items-center gap-3 p-3 rounded-2xl border ${isMine
                             ? "bg-white/10 border-white/10"
@@ -750,7 +750,7 @@ const Community = () => {
           </button>
 
           <img
-            src={`https://carbon-footprint-tracker-4dxj.onrender.com ${activeImage}`}
+            src={`https://carbon-footprint-tracker-4dxj.onrender.com${activeImage}`}
             alt=""
             className="max-w-full max-h-[85vh] object-contain rounded-2xl"
           />
