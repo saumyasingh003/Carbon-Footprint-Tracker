@@ -17,9 +17,11 @@ dotenv.config();
 // DATABASE CONNECTION
 connectDB();
 
-// CREATE UPLOADS FOLDER IF NOT EXISTS
-if (!fs.existsSync("uploads")) {
-  fs.mkdirSync("uploads");
+// CREATE UPLOADS FOLDER IF NOT EXISTS (Bypassed on Vercel read-only filesystem)
+if (!process.env.VERCEL) {
+  if (!fs.existsSync("uploads")) {
+    fs.mkdirSync("uploads");
+  }
 }
 
 // EXPRESS APP
@@ -51,6 +53,10 @@ const server = http.createServer(app);
 initSocket(server);
 
 // SERVER START
-server.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  server.listen(PORT, () => {
+    console.log(`✅ Server running on port ${PORT}`);
+  });
+}
+
+export default app;

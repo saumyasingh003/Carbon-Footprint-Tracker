@@ -8,7 +8,11 @@ const connectDB = async () => {
   } catch (error) {
     console.log("Error connecting to mongodb!", error.message);
 
-    process.exit(1);
+    if (!process.env.VERCEL) {
+      process.exit(1);
+    } else {
+      throw error;
+    }
   }
 };
 
